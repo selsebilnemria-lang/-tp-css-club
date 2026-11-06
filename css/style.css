@@ -1,1 +1,63 @@
-/*Feuille de style du TP */
+
+:root {
+    --couleur-principale: #1f4e79;
+    --couleur-secondaire: #2e75b6;
+   --couleur-accent: #f59e0b;
+    --couleur-fond: #f5f7fa;
+    --couleur-texte: #1e293b;
+    --rayon: 10px;
+    --espace: 1rem;
+   }
+body{
+       font-family: "Segoe UI", Arial, sans-serif;
+       line-height: 1.6;
+       color:#1e293b ;
+       background-color: #f5f7fa ;
+   }
+h1, h2, h3 {
+       color:  #1f4e79;
+       line-height: 1.25;
+   }
+a {
+    color: var(--couleur-principale);
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu > li {
+    list-style: none;
+}
+.important {
+    font-weight: 700;
+    color: #9a3412;
+}
+.carte h3 + p {
+    color: #475569;
+}
+a[href^="https"]::after {
+    content: " ↗";
+}
+a[href$=".pdf"]::after {
+    content: " (PDF)";
+}
+.menu a:hover,.menu a:focus-visible {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.planning tbody tr:nth-child(even) {
+    background-color: #eaf1f8;
+}
+
+input:focus,select:focus,textarea:focus {
+    outline: 3px solid var(--couleur-accent);
+}
+.important::before {
+    content: "★ ";
+    color: var(--couleur-accent);
+}
+/*p { color: red; }
+.important { color: blue; }
+#apropos p { color: green; }
+ green ,1=1,2=10,3=101*/
